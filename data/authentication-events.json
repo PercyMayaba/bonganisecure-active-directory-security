@@ -1,0 +1,87 @@
+{
+  "lab_status": "SIMULATION_ONLY",
+  "organisation": "BonganiSecure Financial Services",
+  "domain": "corp.bonganisecure.local",
+  "events": [
+    {
+      "event_id": "AUTH-001",
+      "timestamp": "2026-11-09T08:15:00",
+      "username": "jfinance",
+      "authentication_protocol": "Kerberos",
+      "service": "Finance-File-Server",
+      "source_ip": "10.10.1.25",
+      "result": "Success",
+      "event_type": "Normal_Ticket_Request"
+    },
+    {
+      "event_id": "AUTH-002",
+      "timestamp": "2026-11-09T08:22:00",
+      "username": "admin01",
+      "authentication_protocol": "Kerberos",
+      "service": "Domain-Controller",
+      "source_ip": "10.10.1.10",
+      "result": "Success",
+      "event_type": "Privileged_Authentication"
+    },
+    {
+      "event_id": "AUTH-003",
+      "timestamp": "2026-11-09T09:05:00",
+      "username": "svc-backup",
+      "authentication_protocol": "Kerberos",
+      "service": "Backup-Service",
+      "source_ip": "10.10.1.40",
+      "result": "Success",
+      "event_type": "Service_Ticket_Request"
+    },
+    {
+      "event_id": "AUTH-004",
+      "timestamp": "2026-11-09T09:15:00",
+      "username": "unknown-user",
+      "authentication_protocol": "NTLM",
+      "service": "Legacy-Application",
+      "source_ip": "10.10.1.55",
+      "result": "Failure",
+      "event_type": "Legacy_Authentication_Failure"
+    },
+    {
+      "event_id": "AUTH-005",
+      "timestamp": "2026-11-09T09:18:00",
+      "username": "unknown-user",
+      "authentication_protocol": "NTLM",
+      "service": "Legacy-Application",
+      "source_ip": "10.10.1.55",
+      "result": "Failure",
+      "event_type": "Repeated_Authentication_Failure"
+    },
+    {
+      "event_id": "AUTH-006",
+      "timestamp": "2026-11-09T09:21:00",
+      "username": "unknown-user",
+      "authentication_protocol": "NTLM",
+      "service": "Legacy-Application",
+      "source_ip": "10.10.1.55",
+      "result": "Failure",
+      "event_type": "Repeated_Authentication_Failure"
+    },
+    {
+      "event_id": "AUTH-007",
+      "timestamp": "2026-11-09T10:05:00",
+      "username": "dit",
+      "authentication_protocol": "Kerberos",
+      "service": "Finance-File-Server",
+      "source_ip": "10.10.1.30",
+      "result": "Success",
+      "event_type": "Standard_Account_Service_Access"
+    },
+    {
+      "event_id": "AUTH-008",
+      "timestamp": "2026-11-09T10:30:00",
+      "username": "svc-backup",
+      "authentication_protocol": "Kerberos",
+      "service": "Backup-Service",
+      "source_ip": "10.10.1.40",
+      "result": "Success",
+      "event_type": "Repeated_Service_Ticket_Request"
+    }
+  ]
+}
