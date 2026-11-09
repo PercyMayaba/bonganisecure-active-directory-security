@@ -1,0 +1,61 @@
+{
+  "lab_status": "SIMULATION_ONLY",
+  "organisation": "BonganiSecure Financial Services",
+  "domain": "corp.bonganisecure.local",
+  "accounts": [
+    {
+      "username": "admin01",
+      "display_name": "Primary Domain Administrator",
+      "department": "IT",
+      "account_type": "Dedicated Admin",
+      "privileged_groups": ["Domain Admins"],
+      "enabled": true,
+      "uses_standard_account_for_admin": false
+    },
+    {
+      "username": "dit",
+      "display_name": "David IT",
+      "department": "IT",
+      "account_type": "Standard User",
+      "privileged_groups": ["Domain Admins"],
+      "enabled": true,
+      "uses_standard_account_for_admin": true
+    },
+    {
+      "username": "jfinance",
+      "display_name": "John Finance",
+      "department": "Finance",
+      "account_type": "Standard User",
+      "privileged_groups": [],
+      "enabled": true,
+      "uses_standard_account_for_admin": false
+    },
+    {
+      "username": "pformer",
+      "display_name": "Peter Former Employee",
+      "department": "Finance",
+      "account_type": "Former Employee",
+      "privileged_groups": ["Backup Operators"],
+      "enabled": false,
+      "uses_standard_account_for_admin": false
+    },
+    {
+      "username": "svc-backup",
+      "display_name": "Backup Service Account",
+      "department": "IT",
+      "account_type": "Service Account",
+      "privileged_groups": ["Backup Operators"],
+      "enabled": true,
+      "uses_standard_account_for_admin": false
+    },
+    {
+      "username": "shr",
+      "display_name": "Sarah HR",
+      "department": "Human Resources",
+      "account_type": "Standard User",
+      "privileged_groups": [],
+      "enabled": true,
+      "uses_standard_account_for_admin": false
+    }
+  ]
+}
