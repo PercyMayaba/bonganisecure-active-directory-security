@@ -1,82 +1,76 @@
-# BonganiSecure Active Directory Security Engineering Lab
+## Project Modules
 
-This project explores enterprise Active Directory security engineering through structured PowerShell exercises, simulated directory environments, security configuration analysis and incident investigation scenarios.
+This project contains six practical Active Directory security engineering modules.
 
-The lab is designed around a financial-services organisation, demonstrating how identity administrators can manage users, groups, privileged access, authentication and security policies while reducing identity-related risks.
+### Module 1: Active Directory Architecture and Directory Inventory
+- Proposed enterprise domain architecture.
+- Organisational Unit (OU) design.
+- Synthetic user and account inventory.
+- PowerShell directory inventory reporting.
 
-The project complements the BonganiSecure Entra ID Zero Trust IAM project by exploring traditional Windows Active Directory concepts and their relationship with modern cloud identity security.
+### Module 2: Active Directory Group Security
+- Security group membership auditing.
+- Privileged group membership analysis.
+- Identification of excessive permissions.
+- Least-privilege recommendations.
 
-## Project Objectives
+### Module 3: Password Security and Policy Auditing
+- Enterprise password security baseline.
+- Password length and complexity assessment.
+- Account lockout policy review.
+- PowerShell policy comparison and reporting.
 
-- Understand Active Directory domain architecture and identity management.
-- Model organisational units, users and security groups.
-- Explore Group Policy and password security.
-- Examine privileged accounts and least-privilege administration.
-- Understand Kerberos and LDAP authentication.
-- Investigate common Active Directory security weaknesses.
-- Develop PowerShell skills for identity administration and security auditing.
-- Document security findings using professional evidence registers and reports.
+### Module 4: Privileged Access and Delegation
+- Domain Admins membership investigation.
+- Administrative identity separation.
+- Former employee privilege review.
+- Service account security assessment.
 
-## Planned Lab Modules
+### Module 5: Kerberos, LDAP and Authentication Security
+- Kerberos authentication concepts.
+- LDAP security considerations.
+- NTLM legacy authentication investigation.
+- Service-ticket monitoring and Kerberoasting defensive awareness.
 
-| Module | Focus |
-|---|---|
-| 1 | Active Directory architecture and domain design |
-| 2 | Users, groups and organisational units |
-| 3 | Group Policy and password security |
-| 4 | Privileged accounts and delegation |
-| 5 | Kerberos, LDAP and authentication security |
-| 6 | Security auditing and incident investigation |
+### Module 6: Security Monitoring and Incident Response
+- Windows Security Event ID analysis.
+- Authentication failure detection.
+- Privileged group change monitoring.
+- Security log clearing investigation.
+- Incident timeline reconstruction.
+- Incident response recommendations.
 
-## Technical Environment
+## Technical Implementation
 
-- Windows 10 Home Single Language host
+**Technologies and tools:**
 - PowerShell
-- GitHub
-- Simulated Active Directory directory data
-- Windows Active Directory security concepts
-- Documentation and security analysis
+- JSON-based synthetic security datasets
+- Microsoft Active Directory security concepts
+- Windows Security Event IDs
+- GitHub version control
+- Security investigation and reporting
 
-## Implementation Approach
+## Lab Environment and Limitations
 
-The initial version uses PowerShell exercises and simulated enterprise directory data because the available laptop has 4 GB RAM.
+This repository is a GitHub-based Active Directory security engineering simulation.
 
-The lab will distinguish between:
+The project uses synthetic directory records and authentication/security events. It does not represent a live Active Directory domain deployment.
 
-- **Simulated:** exercises that model Active Directory behaviour without connecting to a real domain.
-- **Analysed:** security configurations and attack scenarios examined through scripts and documentation.
-- **Live validated:** configurations actually tested in a real Active Directory environment, if suitable infrastructure becomes available.
+No production users, domain controllers, Group Policy Objects or Windows Security logs were modified or accessed.
 
-No production Active Directory environment is represented as deployed.
+Live validation in an authorised Windows Server Active Directory lab is a planned future enhancement.
 
-## Security Engineering Focus
+## Engineering Outcomes
 
-The project focuses on:
+The project demonstrates practical understanding of:
 
-- Identity lifecycle management
-- Least privilege
-- Privileged access security
+- Identity and access management
+- Active Directory architecture
+- Privileged access management
 - Authentication security
-- Group Policy security
-- Directory auditing
-- Threat detection and investigation
-
-## Repository Structure
-
-The repository will be organised into dedicated folders for architecture, PowerShell scripts, security policies, investigations, documentation and evidence.
-
-## Professional Relevance
-
-This project develops practical knowledge relevant to:
-
-- Active Directory Administrator
-- Identity and Access Management Engineer
-- Windows Security Engineer
-- Azure IAM Engineer
-- Cloud Security Engineer
-
-The objective is to build a demonstrable foundation in enterprise identity security and the integration of traditional Active Directory with Microsoft Entra ID.
-
-Individual modules will be marked as simulated, analysed or live validated as work progresses.
+- PowerShell security automation
+- Identity lifecycle governance
+- Security monitoring
+- Incident investigation and remediation
 
 
