@@ -42,6 +42,10 @@ if ($ObservedPolicy.LockoutDurationMinutes -ne $Baseline.LockoutDurationMinutes)
     $Findings += "REVIEW: Account lockout duration differs from the baseline."
 }
 
+if ($ObservedPolicy.LockoutThreshold -ne $Baseline.LockoutThreshold) {
+    $Findings += "REVIEW: Account lockout threshold differs from the proposed baseline; assess brute-force protection and lockout abuse risk."
+}
+
 if ($ObservedPolicy.LockoutObservationWindowMinutes -ne $Baseline.LockoutObservationWindowMinutes) {
     $Findings += "REVIEW: Lockout observation window differs from the baseline."
 }
