@@ -1,0 +1,83 @@
+{
+  "lab_status": "SIMULATION_ONLY",
+  "organisation": "BonganiSecure Financial Services",
+  "domain": "corp.bonganisecure.local",
+  "events": [
+    {
+      "event_id": 4624,
+      "timestamp": "2026-11-09T08:00:00",
+      "username": "jfinance",
+      "source_ip": "10.10.1.25",
+      "description": "Successful account logon",
+      "severity": "Informational"
+    },
+    {
+      "event_id": 4625,
+      "timestamp": "2026-11-09T09:10:00",
+      "username": "unknown-user",
+      "source_ip": "10.10.1.55",
+      "description": "Failed logon attempt",
+      "severity": "Medium"
+    },
+    {
+      "event_id": 4625,
+      "timestamp": "2026-11-09T09:11:00",
+      "username": "unknown-user",
+      "source_ip": "10.10.1.55",
+      "description": "Failed logon attempt",
+      "severity": "Medium"
+    },
+    {
+      "event_id": 4625,
+      "timestamp": "2026-11-09T09:12:00",
+      "username": "unknown-user",
+      "source_ip": "10.10.1.55",
+      "description": "Failed logon attempt",
+      "severity": "Medium"
+    },
+    {
+      "event_id": 4720,
+      "timestamp": "2026-11-09T09:30:00",
+      "username": "admin01",
+      "target_account": "temp-admin",
+      "source_ip": "10.10.1.10",
+      "description": "User account created",
+      "severity": "High"
+    },
+    {
+      "event_id": 4728,
+      "timestamp": "2026-11-09T09:35:00",
+      "username": "admin01",
+      "target_account": "temp-admin",
+      "group": "Domain Admins",
+      "source_ip": "10.10.1.10",
+      "description": "Member added to a security-enabled global group",
+      "severity": "Critical"
+    },
+    {
+      "event_id": 4624,
+      "timestamp": "2026-11-09T09:40:00",
+      "username": "temp-admin",
+      "source_ip": "10.10.1.55",
+      "description": "Successful account logon",
+      "severity": "High"
+    },
+    {
+      "event_id": 1102,
+      "timestamp": "2026-11-09T09:50:00",
+      "username": "admin01",
+      "source_ip": "10.10.1.10",
+      "description": "Audit log cleared",
+      "severity": "Critical"
+    },
+    {
+      "event_id": 4726,
+      "timestamp": "2026-11-09T10:15:00",
+      "username": "admin01",
+      "target_account": "temp-admin",
+      "source_ip": "10.10.1.10",
+      "description": "User account deleted",
+      "severity": "Medium"
+    }
+  ]
+}
